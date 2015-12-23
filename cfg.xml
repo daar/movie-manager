@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <win32 ffmpeg="E:\moviemanager\ffmpeg.exe" ffplay="E:\moviemanager\ffplay.exe" chcp="true"/>
+  <general showoptions="false" pause="false" displaycmdline="false" playsound="false" pass2="false" currentpreset="MP4 Fullscreen"/>
+  <window height="404" width="640" top="248" left="480"/>
+</CONFIG>

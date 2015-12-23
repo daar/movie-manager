@@ -1,0 +1,1126 @@
+ Japanese translation for winff
+ Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+ This file is distributed under the same license as the winff package.
+ FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: winff\n"
+"Report-Msgid-Bugs-To: http://code.google.com/p/winff/issues/list\n"
+"POT-Creation-Date: 2014-02-15 11:14+0100\n"
+"PO-Revision-Date: 2012-12-23 08:12+0000\n"
+"Last-Translator: ub <xenolith0bytetestcomgreen@gmail.com>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-05-04 09:01+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
+
+#: tfrmabout.btnok.caption
+#, fuzzy
+msgctxt "TFRMABOUT.BTNOK.CAPTION"
+msgid "OK"
+msgstr "OK"
+
+#: tfrmabout.frmabout.caption
+msgctxt "TFRMABOUT.FRMABOUT.CAPTION"
+msgid "About WinFF"
+msgstr "WinFFについて"
+
+#: tfrmabout.lblbellard.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLBELLARD.CAPTION"
+msgid "Trademark Fabrice Belllard"
+msgstr "Trademark Fabrice Belllard"
+
+#: tfrmabout.lblcopyright.caption
+msgid "Copyright %s ; Licence: GPL V3+"
+msgstr ""
+
+#: tfrmabout.lblffmeg.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLFFMEG.CAPTION"
+msgid "FFmpeg"
+msgstr "Copy text 	 FFmpeg"
+
+#: tfrmabout.lblgevers.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLGEVERS.CAPTION"
+msgid "Debian/Ubuntu Packaging by Paul Gevers"
+msgstr "Debian/Ubuntu Packaging by Paul Gevers"
+
+#: tfrmabout.lblgmaq.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLGMAQ.CAPTION"
+msgid "Gmaq"
+msgstr "Gmaq"
+
+#: tfrmabout.lblhqpresets.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLHQPRESETS.CAPTION"
+msgid "High Quality Presets From"
+msgstr "高品質のプリセット"
+
+#: tfrmabout.lblklepatsch.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLKLEPATSCH.CAPTION"
+msgid "Icons and Logo by Alex Klepatsch"
+msgstr "アイコンとロゴ Alex Klepatsch"
+
+#: tfrmabout.lblnavas.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLNAVAS.CAPTION"
+msgid "JNavas"
+msgstr "JNavas"
+
+#: tfrmabout.lblosipov.caption
+msgid "Alexey Osipov"
+msgstr ""
+
+#: tfrmabout.lblschwarz.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLSCHWARZ.CAPTION"
+msgid "Kyle Schwarz"
+msgstr "Kyle Schwarz"
+
+#: tfrmabout.lblstoffberg.caption
+msgid "Ian Stoffberg"
+msgstr ""
+
+#: tfrmabout.lblurlffmpeg.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLURLFFMPEG.CAPTION"
+msgid "http://ffmpeg.org"
+msgstr "http://ffmpeg.org"
+
+#: tfrmabout.lblurlwinfforg.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLURLWINFFORG.CAPTION"
+msgid "http://www.winff.org"
+msgstr "http://www.winff.org"
+
+#: tfrmabout.lblurlzeranoe.caption
+#, fuzzy
+msgid "http://ffmpeg.zeranoe.com"
+msgstr "http://ffmpeg.org"
+
+#: tfrmabout.lblweatherford.caption
+msgid "Matthew Weatherford"
+msgstr ""
+
+#: tfrmabout.lblwinbuild.caption
+#, fuzzy
+msgctxt "TFRMABOUT.LBLWINBUILD.CAPTION"
+msgid "FFmpeg Windows Builds by"
+msgstr "FFmpeg Windows のビルド"
+
+#: tfrmabout.lblwinff.caption
+#, fuzzy
+msgid "WinFF %s"
+msgstr "WinFF"
+
+#: tfrmabout.tabffmpeg.caption
+#, fuzzy
+msgctxt "TFRMABOUT.TABFFMPEG.CAPTION"
+msgid "FFmpeg"
+msgstr "Copy text 	 FFmpeg"
+
+#: tfrmabout.tabthanks.caption
+#, fuzzy
+msgctxt "TFRMABOUT.TABTHANKS.CAPTION"
+msgid "Thanks"
+msgstr "謝辞"
+
+#: tfrmabout.tabwinff.caption
+#, fuzzy
+msgctxt "TFRMABOUT.TABWINFF.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: tfrmeditpresets.addpresetbtn.caption
+msgid "Add / Update"
+msgstr "追加/上書き"
+
+#: tfrmeditpresets.cancelbtn.caption
+msgctxt "TFRMEDITPRESETS.CANCELBTN.CAPTION"
+msgid "Close"
+msgstr "閉じる"
+
+#: tfrmeditpresets.deletebtn.caption
+msgid "Delete"
+msgstr "削除"
+
+#: tfrmeditpresets.edit1.hint
+msgid "One word, only letters and numbers"
+msgstr "単語：文字と数字"
+
+#: tfrmeditpresets.edit2.hint
+msgid "Enter a more descriptive name for this preset"
+msgstr "わかりやすい名前にして下さい"
+
+#: tfrmeditpresets.edit3.hint
+msgid "Please don't use -i or output file parameters"
+msgstr "-i は使えません"
+
+#: tfrmeditpresets.edit4.hint
+msgid "Do not include a dot"
+msgstr "ドットはいりません"
+
+#: tfrmeditpresets.edit5.hint
+msgid "Choose a category to group this preset under"
+msgstr "プリセットのカテゴリを選択"
+
+#: tfrmeditpresets.export.caption
+msgctxt "TFRMEDITPRESETS.EXPORT.CAPTION"
+msgid "Export"
+msgstr "書き出し"
+
+#: tfrmeditpresets.frmeditpresets.caption
+#, fuzzy
+msgctxt "TFRMEDITPRESETS.FRMEDITPRESETS.CAPTION"
+msgid "Edit Presets"
+msgstr "プリセットの編集"
+
+#: tfrmeditpresets.import.caption
+msgid "Import"
+msgstr "読み込み"
+
+#: tfrmeditpresets.label1.caption
+msgid "Category / Preset"
+msgstr "カテゴリ/プリセット"
+
+#: tfrmeditpresets.label2.caption
+msgid "Preset Name (one word, only letters and numbers)"
+msgstr "プリセット名（単語：文字と数字）"
+
+#: tfrmeditpresets.label3.caption
+msgid "Preset Label"
+msgstr "プリセットラベル"
+
+#: tfrmeditpresets.label4.caption
+msgid "Preset Command Line Parameters (no -i or output file)"
+msgstr "プリセットコマンドオプション（-i以外 出力ファイル）"
+
+#: tfrmeditpresets.label5.caption
+msgid "Output File Extension (do not include the '.' )"
+msgstr "出力ファイルの拡張子（'.'は含まない）"
+
+#: tfrmeditpresets.label6.caption
+msgid "Category"
+msgstr "カテゴリ"
+
+#: tfrmeditpresets.okbtn.caption
+msgid "Save"
+msgstr "保存"
+
+#: tfrmeditpresets.opendialog1.title
+#, fuzzy
+msgid "Import a Preset"
+msgstr "プリセットの読み込み"
+
+#: tfrmeditpresets.pnltop.caption
+msgid "pnlTop"
+msgstr "pnlTop"
+
+#: tfrmeditpresets.savedialog1.title
+#, fuzzy
+msgid "Export a Preset"
+msgstr "プリセットを書きだす"
+
+#: tfrmexport.cancelbtn.caption
+msgctxt "TFRMEXPORT.CANCELBTN.CAPTION"
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: tfrmexport.caption
+msgid "Export Presets"
+msgstr "プリセットを書きだす"
+
+#: tfrmexport.exportbtn.caption
+msgctxt "TFRMEXPORT.EXPORTBTN.CAPTION"
+msgid "Export"
+msgstr "書き出し"
+
+#: tfrmexport.label1.caption
+msgid "Choose Presets to Export:"
+msgstr "書きだすプリセットの選択"
+
+#: tfrmmain.audbitrate.hint
+msgctxt "TFRMMAIN.AUDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "(整数) ストリームが使うキロビット/秒"
+
+#: tfrmmain.audchannels.hint
+msgid "(<integer>) number of audio channels"
+msgstr "(整数) 音声チャンネル数"
+
+#: tfrmmain.audsamplingrate.hint
+msgid "(<integer>) the sampling frequency of the audio in Hertz"
+msgstr "(整数) 音声のサンプル周波数（ヘルツ）"
+
+#: tfrmmain.btnadd.caption
+msgid "Add"
+msgstr "追加"
+
+#: tfrmmain.btnadd.hint
+msgid "Add file(s) to the list for conversion"
+msgstr "変換リストにファイルを追加"
+
+#: tfrmmain.btnclear.caption
+msgid "Clear"
+msgstr "クリア"
+
+#: tfrmmain.btnclear.hint
+msgid "Remove all files from the list"
+msgstr "変換リストを消す"
+
+#: tfrmmain.btnconvert.caption
+msgid "Convert"
+msgstr "変換"
+
+#: tfrmmain.btnconvert.hint
+msgid "Start the conversion process"
+msgstr "変換開始"
+
+#: tfrmmain.btnoptions.caption
+msgctxt "TFRMMAIN.BTNOPTIONS.CAPTION"
+msgid "Options"
+msgstr "オプション"
+
+#: tfrmmain.btnoptions.hint
+msgid "Open/close the additional options window"
+msgstr "オプションウィンドウの開閉"
+
+#: tfrmmain.btnplay.caption
+msgid "Play"
+msgstr "再生"
+
+#: tfrmmain.btnplay.hint
+msgid "Preview the selected source file with ffplay (good test to see if conversion is possible)"
+msgstr "選択したファイルをffplayでプレビュー（変換可能かテスト）"
+
+#: tfrmmain.btnpreview.caption
+msgid "Preview"
+msgstr "プレビュー"
+
+#: tfrmmain.btnpreview.hint
+msgid "Preview using the output settings"
+msgstr "出力設定でプレビュー"
+
+#: tfrmmain.btnremove.caption
+msgid "Remove"
+msgstr "削除"
+
+#: tfrmmain.btnremove.hint
+msgid "Remove selected file(s) from the list"
+msgstr "変換リストから選んだファイルを削除"
+
+#: tfrmmain.categorybox.hint
+msgid "Device or file type the video should be converted to"
+msgstr "変換するデバイスやファイルの種類"
+
+#: tfrmmain.cbleft.caption
+msgid "90 Left"
+msgstr ""
+
+#: tfrmmain.cbleftflip.caption
+msgid "90 Left + Vertical Flip"
+msgstr ""
+
+#: tfrmmain.cboutputpath.caption
+msgctxt "TFRMMAIN.CBOUTPUTPATH.CAPTION"
+msgid "Use Source Folder"
+msgstr "ソースフォルダを使う"
+
+#: tfrmmain.cbright.caption
+msgid "90 Right"
+msgstr ""
+
+#: tfrmmain.cbrightflip.caption
+msgid "90 Right + Vertical Flip"
+msgstr ""
+
+#: tfrmmain.cbx2pass.caption
+msgid "2 pass"
+msgstr "2パス"
+
+#: tfrmmain.cbx2pass.hint
+msgid "Using two passes allows the encoder to gather information in the first run for enhanced quality"
+msgstr "2パスでは最初にエンコーダーが情報を集める"
+
+#: tfrmmain.cbxdeinterlace.caption
+msgid "Deinterlace"
+msgstr "非インターレース"
+
+#: tfrmmain.cbxdeinterlace.hint
+msgid "Removes interlacing from the video (if necessary)"
+msgstr "ビデオのインターレースを外す（必要なら）"
+
+#: tfrmmain.choosefolderbtn.caption
+msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmmain.destfolder.hint
+msgid "Target location for the final video (choose a different folder than the source folder)"
+msgstr "ビデオのターゲット（ソースフォルダと別のフォルダを選ぶ）"
+
+#: tfrmmain.dlgopenfile.title
+#, fuzzy
+msgid "Select Video Files..."
+msgstr "ビデオを選択"
+
+#: tfrmmain.edtaspectratio.hint
+msgid "(<integer:integer> or <real>) the physical aspect ratio (DAR) of the target display"
+msgstr "（整数:整数か実数）ディスプレイのアスペクト比(DQR)"
+
+#: tfrmmain.edtaudiosync.hint
+msgid "(<integer>) From 10 up to audio sampling rate such as 44100, 48000. Allows \"stretch\"/\"squeeze\" audio stream."
+msgstr "（整数）オーディオサンプル周波数 44100, 48000など \"stretch\"/\"squeeze\"も使える"
+
+#: tfrmmain.edtcropbottom.text
+msgctxt "TFRMMAIN.EDTCROPBOTTOM.TEXT"
+msgid "0"
+msgstr "0"
+
+#: tfrmmain.edtcropleft.text
+msgctxt "TFRMMAIN.EDTCROPLEFT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: tfrmmain.edtcropright.text
+msgctxt "TFRMMAIN.EDTCROPRIGHT.TEXT"
+msgid "0"
+msgstr "0"
+
+#: tfrmmain.edtcroptop.text
+msgctxt "TFRMMAIN.EDTCROPTOP.TEXT"
+msgid "0"
+msgstr "0"
+
+#: tfrmmain.edtseekhh.hint
+msgctxt "TFRMMAIN.EDTSEEKHH.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - 変換を始める前にこの位置にシークする"
+
+#: tfrmmain.edtseekmm.hint
+msgctxt "TFRMMAIN.EDTSEEKMM.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - 変換を始める前にこの位置にシークする"
+
+#: tfrmmain.edtseekss.hint
+msgctxt "TFRMMAIN.EDTSEEKSS.HINT"
+msgid "<hh:mm:ss> - Seek to this position before start converting"
+msgstr "<hh:mm:ss> - 変換を始める前にこの位置にシークする"
+
+#: tfrmmain.edtttrhh.hint
+msgctxt "TFRMMAIN.EDTTTRHH.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - この時間で変換を止める"
+
+#: tfrmmain.edtttrmm.hint
+msgctxt "TFRMMAIN.EDTTTRMM.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - この時間で変換を止める"
+
+#: tfrmmain.edtttrss.hint
+msgctxt "TFRMMAIN.EDTTTRSS.HINT"
+msgid "<hh:mm:ss> - Stop after this much of video converted"
+msgstr "<hh:mm:ss> - この時間で変換を止める"
+
+#: tfrmmain.edtvolume.hint
+msgid "(<integer>) 256 = Current Volume, 128 = Half Volume, 512 = Double Volume"
+msgstr "（整数）259=既定値 128=半分のボリューム 512=倍のボリューム"
+
+#: tfrmmain.frmmain.caption
+#, fuzzy
+msgctxt "TFRMMAIN.FRMMAIN.CAPTION"
+msgid "WinFF"
+msgstr "WinFF"
+
+#: tfrmmain.label1.caption
+msgid "Convert to:"
+msgstr "変換するターゲット:"
+
+#: tfrmmain.label10.caption
+msgid "Audio Channels"
+msgstr "音声チャンネル"
+
+#: tfrmmain.label12.caption
+msgctxt "TFRMMAIN.LABEL12.CAPTION"
+msgid "Output Folder:"
+msgstr "出力フォルダ"
+
+#: tfrmmain.label19.caption
+msgid "Preset:"
+msgstr "形式（プリセット）の選択:"
+
+#: tfrmmain.label20.caption
+msgid "Volume"
+msgstr "ボリューム"
+
+#: tfrmmain.label21.caption
+msgid "Sync"
+msgstr "同期"
+
+#: tfrmmain.label22.caption
+msgid "Seek to"
+msgstr "シークする"
+
+#: tfrmmain.label23.caption
+msgid "Time to Record"
+msgstr "終了時間"
+
+#: tfrmmain.label24.caption
+msgid "Hours / Minutes / Seconds"
+msgstr "時/分/秒"
+
+#: tfrmmain.label3.caption
+msgid "Additional Command Line Parameters"
+msgstr "コマンドラインの追加オプション"
+
+#: tfrmmain.label5.caption
+msgid "1st Pass"
+msgstr ""
+
+#: tfrmmain.label6.caption
+msgid "2nd Pass"
+msgstr ""
+
+#: tfrmmain.label7.caption
+msgid "Audio Bitrate"
+msgstr "音声ビットレート"
+
+#: tfrmmain.label8.caption
+msgid "Sample Rate"
+msgstr "サンプル周波数"
+
+#: tfrmmain.label9.caption
+msgid "X"
+msgstr "X"
+
+#: tfrmmain.lblapplytoall.caption
+msgid "Apply to All"
+msgstr ""
+
+#: tfrmmain.lblaspectratio.caption
+msgid "Aspect Ratio"
+msgstr "アスペクト比"
+
+#: tfrmmain.lblcancelchanges.caption
+msgid "Cancel Changes"
+msgstr ""
+
+#: tfrmmain.lblcropbottom.caption
+msgid "Bottom"
+msgstr "下"
+
+#: tfrmmain.lblcropleft.caption
+msgid "Left"
+msgstr "左"
+
+#: tfrmmain.lblcropright.caption
+msgid "Right"
+msgstr "右"
+
+#: tfrmmain.lblcroptop.caption
+msgid "Top"
+msgstr "上"
+
+#: tfrmmain.lblframerate.caption
+msgid "Frame Rate"
+msgstr "フレームレート"
+
+#: tfrmmain.lblrotate.caption
+msgid "Rotation"
+msgstr ""
+
+#: tfrmmain.lblsavechanges.caption
+#, fuzzy
+msgid "Apply Changes"
+msgstr "プリセットを適用"
+
+#: tfrmmain.lblsavechanges.hint
+msgid "Click here to apply settings changes to the file conversion above"
+msgstr ""
+
+#: tfrmmain.lblvideobitrate.caption
+msgid "Video Bitrate"
+msgstr "映像ビットレート"
+
+#: tfrmmain.lblvideosize.caption
+msgid "Video Size"
+msgstr "映像サイズ"
+
+#: tfrmmain.menuitem1.caption
+msgctxt "TFRMMAIN.MENUITEM1.CAPTION"
+msgid "Apply Preset"
+msgstr "プリセットを適用"
+
+#: tfrmmain.menuitem2.caption
+msgctxt "TFRMMAIN.MENUITEM2.CAPTION"
+msgid "Apply Destination Folder"
+msgstr "出力フォルダを適用"
+
+#: tfrmmain.menuitem9.caption
+msgid "-"
+msgstr "-"
+
+#: tfrmmain.mitabout.caption
+msgid "About"
+msgstr "情報"
+
+#: tfrmmain.mitdisplaycmdline.caption
+msgid "Display Cmd Line"
+msgstr "コマンドラインの表示"
+
+#: tfrmmain.mitdocs.caption
+msgid "Documentation"
+msgstr "ドキュメント"
+
+#: tfrmmain.mitexit.caption
+msgid "Exit"
+msgstr "終了"
+
+#: tfrmmain.mitforums.caption
+msgid "Forums"
+msgstr "フォーラム"
+
+#: tfrmmain.mitimportpreset.caption
+msgid "Import Preset"
+msgstr "プリセットの読み込み"
+
+#: tfrmmain.mitpauseonfinish.caption
+msgid "Pause on Finish"
+msgstr "終了時に一時停止"
+
+#: tfrmmain.mitplaysoundonfinish.caption
+msgid "Play Sound on Finish"
+msgstr "終了時に音声再生"
+
+#: tfrmmain.mitpreferences.caption
+msgid "Preferences"
+msgstr "設定"
+
+#: tfrmmain.mitpresets.caption
+msgid "Presets"
+msgstr "プリセット"
+
+#: tfrmmain.mitrestoredefaults.caption
+msgid "Restore Defaults"
+msgstr ""
+
+#: tfrmmain.mitsaveoptions.caption
+msgid "Save Options to Preset"
+msgstr ""
+
+#: tfrmmain.mitselectall.caption
+msgid "Select All"
+msgstr ""
+
+#: tfrmmain.mitshowoptions.caption
+msgctxt "TFRMMAIN.MITSHOWOPTIONS.CAPTION"
+msgid "Additional Options"
+msgstr "追加オプション"
+
+#: tfrmmain.mitshutdownonfinish.caption
+msgid "Shutdown on Finish"
+msgstr "終了時にシャットダウン"
+
+#: tfrmmain.mitviewmode.caption
+msgid "Detailed View"
+msgstr "詳細"
+
+#: tfrmmain.mitwinff.caption
+msgid "WinFF Website"
+msgstr "WinFFウェブサイト"
+
+#: tfrmmain.mnuedit.caption
+msgid "Edit"
+msgstr "編集"
+
+#: tfrmmain.mnufile.caption
+msgid "File"
+msgstr "ファイル"
+
+#: tfrmmain.mnuhelp.caption
+msgid "Help"
+msgstr "ヘルプ"
+
+#: tfrmmain.mnuoptions.caption
+msgctxt "TFRMMAIN.MNUOPTIONS.CAPTION"
+msgid "Options"
+msgstr "オプション"
+
+#: tfrmmain.openfolderbtn.caption
+msgid "Open"
+msgstr ""
+
+#: tfrmmain.pnlmain.caption
+msgid "pnlMain"
+msgstr "pnlMain"
+
+#: tfrmmain.presetbox.hint
+msgid "Specific settings to use for the chosen device or file type"
+msgstr "選択したデバイスやファイルで使う固有の設定"
+
+#: tfrmmain.tabsheet2.caption
+msgctxt "TFRMMAIN.TABSHEET2.CAPTION"
+msgid "Audio"
+msgstr "音声の設定"
+
+#: tfrmmain.tabsheet3.caption
+msgctxt "TFRMMAIN.TABSHEET3.CAPTION"
+msgid "Crop"
+msgstr "映像クロップ"
+
+#: tfrmmain.tabsheet4.caption
+msgctxt "TFRMMAIN.TABSHEET4.CAPTION"
+msgid "Time"
+msgstr "時間指定"
+
+#: tfrmmain.tabsheet5.caption
+msgctxt "TFRMMAIN.TABSHEET5.CAPTION"
+msgid "FFmpeg"
+msgstr "FFmpeg"
+
+#: tfrmmain.tabsheet6.caption
+msgctxt "TFRMMAIN.TABSHEET6.CAPTION"
+msgid "Output Details"
+msgstr "出力の設定"
+
+#: tfrmmain.tabvideo.caption
+#, fuzzy
+msgctxt "TFRMMAIN.TABVIDEO.CAPTION"
+msgid "Video"
+msgstr "映像"
+
+#: tfrmmain.vidbitrate.hint
+msgctxt "TFRMMAIN.VIDBITRATE.HINT"
+msgid "(<integer>) the target kilobits/second that the stream should use"
+msgstr "（整数）ストリームが使うキロビット/秒"
+
+#: tfrmmain.vidframerate.hint
+msgid "(<real> or <integer>) number of frames per second"
+msgstr "（実数か整数）フレーム数/秒"
+
+#: tfrmmain.vidsizex.hint
+msgctxt "TFRMMAIN.VIDSIZEX.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "（整数x整数）フレームのピクセル数 ピクセルアスペクト比が無効なコーデックではフレームサイズ"
+
+#: tfrmmain.vidsizey.hint
+msgctxt "TFRMMAIN.VIDSIZEY.HINT"
+msgid "(<integer> X <integer>) Amount of pixels in each frame. For codecs that don''t support pixel aspect ratio (PAR) this is the final frame size."
+msgstr "（整数x整数）フレームのピクセル数 ピクセルアスペクト比が無効なコーデックではフレームサイズ"
+
+| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#: tfrmpreferences.btnaftercommand.caption
+#, fuzzy
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNAFTERCOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+| msgctxt "TFRMMAIN.CHOOSEFOLDERBTN.CAPTION"
+#: tfrmpreferences.btnbeforecommand.caption
+#, fuzzy
+#| msgid "..."
+msgctxt "TFRMPREFERENCES.BTNBEFORECOMMAND.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btncancel.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNCANCEL.CAPTION"
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: tfrmpreferences.btndefaultdir.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNDEFAULTDIR.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnlinffmpegpath.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNLINFFMPEGPATH.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnlinffplaypath.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNLINFFPLAYPATH.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnlinterminalexe.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNLINTERMINALEXE.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnok.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNOK.CAPTION"
+msgid "OK"
+msgstr "OK"
+
+#: tfrmpreferences.btnwinffmpegpath.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNWINFFMPEGPATH.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.btnwinffplaypath.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.BTNWINFFPLAYPATH.CAPTION"
+msgid "..."
+msgstr "..."
+
+#: tfrmpreferences.cbchcpchar.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.CBCHCPCHAR.CAPTION"
+msgid "Use CHCP for international characters"
+msgstr "CHCPを使う"
+
+#: tfrmpreferences.cbenablemulti.caption
+msgid "Enable Multiple Presets in File List "
+msgstr ""
+
+#: tfrmpreferences.cbrememberlastdir.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.CBREMEMBERLASTDIR.CAPTION"
+msgid "Remember Last Used Directory"
+msgstr "最後に使用したフォルダを記憶"
+
+#: tfrmpreferences.cbthreads.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.CBTHREADS.CAPTION"
+msgid "Use Several Encoding Threads:"
+msgstr "エンコードにマルチスレッドを使う"
+
+#: tfrmpreferences.edtlinterminaloptions.hint
+#, fuzzy
+msgctxt "TFRMPREFERENCES.EDTLINTERMINALOPTIONS.HINT"
+msgid "'-e' for xterm, '-x' for gnome-terminal"
+msgstr "xtermは -e gnome-terminalは -x"
+
+#: tfrmpreferences.frmpreferences.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.FRMPREFERENCES.CAPTION"
+msgid "WinFF Preferences"
+msgstr "WinFFの設定"
+
+#: tfrmpreferences.lblaftercommand.caption
+msgid "Command to execute at end of script"
+msgstr ""
+
+#: tfrmpreferences.lblbeforecommand.caption
+msgid "Command to execute at beginning of script"
+msgstr ""
+
+#: tfrmpreferences.lbldefaultdir.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLDEFAULTDIR.CAPTION"
+msgid "Default Destination Directory:"
+msgstr "デフォルトの出力フォルダ"
+
+#: tfrmpreferences.lbllinffmpegpath.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLLINFFMPEGPATH.CAPTION"
+msgid "Path to FFmpeg or avconv Executable:"
+msgstr "FFmpegのパス"
+
+#: tfrmpreferences.lbllinffplaypath.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLLINFFPLAYPATH.CAPTION"
+msgid "Path to FFplay or avplay Executable:"
+msgstr "FFplayのパス"
+
+#: tfrmpreferences.lbllinterminalexe.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLLINTERMINALEXE.CAPTION"
+msgid "Terminal to run FFmpeg in:"
+msgstr "FFmpegを実行する端末"
+
+#: tfrmpreferences.lbllinterminaloptions.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLLINTERMINALOPTIONS.CAPTION"
+msgid "Terminal Options:"
+msgstr "端末のオプション"
+
+#: tfrmpreferences.lblpriority.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLPRIORITY.CAPTION"
+msgid "Priority:"
+msgstr "優先度"
+
+#: tfrmpreferences.lblwinffmpegpath.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLWINFFMPEGPATH.CAPTION"
+msgid "Path to FFmpeg or avconv Executable:"
+msgstr "FFmpegのパス"
+
+#: tfrmpreferences.lblwinffplay.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.LBLWINFFPLAY.CAPTION"
+msgid "Path to FFplay or avplay Executable:"
+msgstr "FFplayのパス"
+
+#: tfrmpreferences.tabgeneral.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.TABGENERAL.CAPTION"
+msgid "General"
+msgstr "一般"
+
+#: tfrmpreferences.tablinux.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.TABLINUX.CAPTION"
+msgid "Linux"
+msgstr "Linux"
+
+#: tfrmpreferences.tabscripting.caption
+msgid "Scripting"
+msgstr ""
+
+#: tfrmpreferences.tabwindows.caption
+#, fuzzy
+msgctxt "TFRMPREFERENCES.TABWINDOWS.CAPTION"
+msgid "MS Windows"
+msgstr "MS Windows"
+
+#: tfrmscript.btnclip.caption
+msgid "Copy to Clipboard"
+msgstr "クリップボードにコピー"
+
+#: tfrmscript.btnclose.caption
+msgctxt "TFRMSCRIPT.BTNCLOSE.CAPTION"
+msgid "Close"
+msgstr "閉じる"
+
+#: tfrmscript.btnrun.caption
+msgid "Run!"
+msgstr "実行"
+
+#: tfrmscript.btnsave.caption
+msgid "Save As..."
+msgstr "名前をつけて保存…"
+
+#: tfrmscript.caption
+msgid "FFmpeg Command Line"
+msgstr "FFmpegのコマンドライン"
+
+#: unit1.rsanalysing
+msgid "Analysing"
+msgstr "解析中"
+
+#: unit1.rsconverting
+msgid "Converting"
+msgstr "変換中"
+
+#: unit1.rscouldnotfindffmpeg
+msgid "Could not find either ffmpeg or avconv."
+msgstr "FFmpegまたはavconvが見つかりません"
+
+#: unit1.rscouldnotfindffplay
+msgid "Could not find either ffplay or avplay."
+msgstr "FFplayまたはavplayが見つかりません"
+
+#: unit1.rscouldnotfindfile
+msgid "Could Not Find File"
+msgstr "ファイルが見つかりません"
+
+#: unit1.rscouldnotfindpresetfile
+msgid "Could not find presets file."
+msgstr "プリセットが見つかりません"
+
+#: unit1.rsextensionnoperiod
+msgid "Extension can not contain a period"
+msgstr "拡張子にピリオドがありません"
+
+#: unit1.rsfiledoesnotexist
+msgid "file does not exist"
+msgstr "ファイルが存在しません"
+
+#: unit1.rsinvalidpreset
+msgid "Invalid Preset File"
+msgstr "無効なプリセットファイル"
+
+#: unit1.rsnamemustbeallpha
+msgid "Name Must be alphanumeric (a-z,A-Z,0-9)"
+msgstr "名前はアルファベットと数字(a-z,A-Z,0-9)"
+
+#: unit1.rspleaseadd1file
+msgid "Please add at least 1 file to convert"
+msgstr "１つ以上のファイルを追加して下さい"
+
+#: unit1.rspleaseselectapreset
+msgid "Please select a preset"
+msgstr "プリセットを選んで下さい"
+
+#: unit1.rspresetalreadyexist
+msgid "Preset: %s%s%s already exists. Do you want to replace the current preset?"
+msgstr "プリセット: %s%s%s はすでに存在します。上書きしますか?"
+
+#: unit1.rspresethasnoext
+msgid "The preset to import does not have an extension"
+msgstr "プリセットに拡張子がありません"
+
+#: unit1.rspresethasnolabel
+msgid "The preset to import does not have a label"
+msgstr "プリセットにラベルがありません"
+
+#: unit1.rspresettoexport
+msgid "Please select a preset to export"
+msgstr "書きだすプリセットを選んで下さい"
+
+#: unit1.rspresetwithlabelexists
+msgid "Preset with label: %s%s%s already exists"
+msgstr "ラベル: %s%s%s を持つプリセットが存在します"
+
+#: unit1.rspressenter
+msgid "Press Enter to Continue"
+msgstr "Enterで続行"
+
+#: unit1.rsrddialogtitle
+msgid "Restore defaults"
+msgstr ""
+
+#: unit1.rsreplacepreset
+msgid "Replace Preset?"
+msgstr "プリセットを更新しますか?"
+
+#: unit1.rsrestoredefaults
+msgid "Restore Presets and Preferences to Defaults?"
+msgstr ""
+
+#: unit1.rsselectdirectory
+msgid "Select Directory"
+msgstr "ディレクトリを選択"
+
+#: unit1.rsselectpresetfile
+msgid "Select Preset File"
+msgstr "プリセットを選択"
+
+#: unit1.rsselectvideofiles
+msgid "Select Video Files"
+msgstr "ビデオを選択"
+
+#: unit1.rsterminaltestfailed
+msgid "It seems that starting the terminal failed. The most likely cause is that the setting for terminal options in the linux preferences is incorrect. You can find it via the menu: Edit -> Preferences -> Linux -> Terminal Options. Try changing \"-e\" to \"-x\" or vice versa."
+msgstr ""
+
+#: unit1.rsthepresethasillegalchars
+msgid "The preset contains illegal characters"
+msgstr "プリセットに不正な文字"
+
+#: unit2.rscreatepreset
+msgid "Create Preset:"
+msgstr "プリセットの作成:"
+
+#: unit2.rsimportpresets
+msgid "Import Presets"
+msgstr "プリセットを読みこむ"
+
+#: unit2.rslabelmustbeunique
+msgid "Label must be unique."
+msgstr "同じラベルは不可"
+
+#: unit2.rsremovepreset
+msgid "Remove Preset:"
+msgstr "プリセットの削除"
+
+#: unit2.rsupdatepreset
+msgid "Update Preset:"
+msgstr "プリセットの更新"
+
+#: unit2.rsyoumustenterextension
+msgid "You must enter the extension."
+msgstr "拡張子を入力"
+
+#: unit2.rsyoumustenterlabel
+msgid "You must enter a label."
+msgstr "ラベルを入力"
+
+#: unit2.rsyoumustenternmae
+msgid "You must enter a name."
+msgstr "名前を入力"
+
+#: unit3.rslaunchpadcontrib
+msgid "Launchpad contributors"
+msgstr ""
+
+#: unit3.rstranslators
+msgid "Translators:"
+msgstr ""
+
+#: unit4.rspriorityhigh
+msgid "High"
+msgstr "高"
+
+#: unit4.rspriorityidle
+msgid "Idle"
+msgstr "低"
+
+~ msgctxt "tfrmpreferences.btnaftercommand.caption"
+~ msgid "..."
+~ msgstr "..."
+~ msgctxt "tfrmpreferences.btnbeforecommand.caption"
+~ msgid "..."
+~ msgstr "..."
+~ msgid "Form1"
+~ msgstr "フォーム1"
+~ msgid "WinFF 1.3.2"
+~ msgstr "WinFF 1.3.2"
+~ msgid "http://hawkeye.arrozcru.org/"
+~ msgstr "http://hawkeye.arrozcru.org/"
+~ msgid "Copyright 2006-2009 GPL V3"
+~ msgstr "Copyright 2006-2009 GPL V3"
+~ msgid "Matthew Weatherford,  Ian Stoffberg, and Alexey Osipov"
+~ msgstr "Matthew Weatherford, Ian Stoffberg, and Alexey Osipov"
+~ msgctxt "TFRMABOUT.PAGE2.CAPTION"
+~ msgid "FFmpeg"
+~ msgstr "FFmpeg"
+~ msgctxt "TFRMMAIN.BTNAPPLYDESTINATION.CAPTION"
+~ msgid "Apply Output Folder"
+~ msgstr "出力フォルダを適用"
+~ msgctxt "TFRMMAIN.CAPTION"
+~ msgid "WinFF"
+~ msgstr "WinFF"
+~ msgctxt "TFRMPREFERENCES.BUTTON1.CAPTION"
+~ msgid "OK"
+~ msgstr "OK"
+~ msgctxt "TFRMPREFERENCES.BUTTON2.CAPTION"
+~ msgid "Cancel"
+~ msgstr "キャンセル"
+~ msgctxt "TFRMPREFERENCES.BUTTON3.CAPTION"
+~ msgid "..."
+~ msgstr "..."
+~ msgctxt "TFRMPREFERENCES.BUTTON4.CAPTION"
+~ msgid "..."
+~ msgstr "..."
+~ msgctxt "TFRMPREFERENCES.BUTTON5.CAPTION"
+~ msgid "..."
+~ msgstr "..."
+~ msgctxt "TFRMPREFERENCES.BUTTON6.CAPTION"
+~ msgid "..."
+~ msgstr "..."
+~ msgctxt "TFRMPREFERENCES.BUTTON7.CAPTION"
+~ msgid "..."
+~ msgstr "..."
+~ msgctxt "TFRMPREFERENCES.BUTTON8.CAPTION"
+~ msgid "..."
+~ msgstr "..."
+~ msgctxt "TFRMPREFERENCES.LABEL4.CAPTION"
+~ msgid "Path to FFmpeg Executable:"
+~ msgstr "FFmpegのパス"
+~ msgctxt "TFRMPREFERENCES.LABEL5.CAPTION"
+~ msgid "Path to FFplay Executable:"
+~ msgstr "FFplayのパス"
+#: unit4.rsprioritynormal
+#, fuzzy
+msgid "Normal"
+msgstr "中"
+
