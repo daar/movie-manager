@@ -1,7 +1,7 @@
 # Movie-manager
 Movie-manager is a platform independent desktop application that manages the movie files that you have on your computer, NAS or on any other drive. It will index the paths you supply and will try to match the files with an IMDb entry. If not succesfull you can also match files manually by supplying a title, IMDb url or IMDb ID.
 
-Movie-manager supports transcoding of your movie files. This feature was added by incorporating WinFF. This application is a wrapper around ffmpeg which is also written in FPC like movie-manager. The support is now very basic, but it works fine. In the future I will incorporate WinFF more tightly so it becomes an integral part.
+Movie-manager supports transcoding of your movie files. This feature was added by incorporating [WinFF] (http://winff.org). This application is a wrapper around ffmpeg which is also written in FPC like movie-manager. The support is now very basic, but it works fine. In the future I will incorporate WinFF more tightly so it becomes an integral part.
 
 You can also play your movie files directly from movie-manager, provided you have ffplay in your search path.
 
