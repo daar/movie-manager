@@ -78,6 +78,7 @@
         <ComponentName Value="AboutForm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <UnitName Value="About"/>
       </Unit4>
       <Unit5>
         <Filename Value="license.pas"/>
@@ -107,9 +108,9 @@
         <UnitName Value="Unit1"/>
       </Unit8>
       <Unit9>
-        <Filename Value="database.pas"/>
+        <Filename Value="properties.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="database"/>
+        <UnitName Value="Properties"/>
       </Unit9>
     </Units>
   </ProjectOptions>

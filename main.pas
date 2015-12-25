@@ -6,10 +6,10 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics,
-  Dialogs, Menus, ComCtrls, ExtCtrls, StdCtrls,
+  Dialogs, Menus, ComCtrls, ExtCtrls, StdCtrls, DBGrids,
   httpsend,
-  IMDb, Process, Settings, About, sqlite3conn, sqldb, db,
-  ManualLookup,
+  IMDb, Process, Settings, About, sqlite3conn, sqldb, DB,
+  ManualLookup, Properties,
   //WinFF
   Unit1;
 
@@ -19,19 +19,22 @@ type
 
   TMainForm = class(TForm)
     DataSource: TDataSource;
+    DBGrid1: TDBGrid;
+    SettingsMenuItem: TMenuItem;
     OpenDBMenuItem: TMenuItem;
     NewDBMenuItem: TMenuItem;
     OpenDialog: TOpenDialog;
     PlayButton: TButton;
     ManualLookupButton: TButton;
     RenameFileButton: TButton;
-    Splitter2: TSplitter;
+    MovieDetailSplitter: TSplitter;
     SQLQuery: TSQLQuery;
+    SQLTransaction1: TSQLTransaction;
     TranscodeFileButton: TButton;
-    Image1: TImage;
+    MovieImage: TImage;
     MenuImageList: TImageList;
-    Label1: TLabel;
-    SQLite3Connection: TSQLite3Connection;
+    DetailsLabel: TLabel;
+    DBConnection: TSQLite3Connection;
     TitleLabel: TLabel;
     MainMenu: TMainMenu;
     FileMenuItem: TMenuItem;
@@ -39,9 +42,9 @@ type
     HelpMenuItem: TMenuItem;
     AboutMenuItem: TMenuItem;
     MovieDetailPanel: TPanel;
-    Splitter1: TSplitter;
-    StatusBar1: TStatusBar;
-    ToolBar1: TToolBar;
+    MovieTreeSplitter: TSplitter;
+    StatusBar: TStatusBar;
+    ToolBar: TToolBar;
     IndexFilesToolButton: TToolButton;
     MovieInfoToolButton: TToolButton;
     SettingsToolButton: TToolButton;
@@ -150,7 +153,7 @@ const
     '.rmvb',
     '.roq',
     '.svi',
-//    '.vob',  //need to implement volume detection before we can support this extension
+    //    '.vob',  //need to implement volume detection before we can support this extension
     '.webm',
     '.wmv',
     '.yuv');
@@ -227,8 +230,7 @@ begin
 
   SearchPaths := TStringList.Create;
   SearchPaths.Delimiter := ';';
-  SearchPaths.DelimitedText :=
-    SettingsForm.AppProps.ReadString('Settings', 'MovieSearchPath', '');
+  SearchPaths.DelimitedText := PropertiesINIReadString('Settings', 'MovieSearchPath', '');
 
   for j := 0 to SearchPaths.Count - 1 do
   begin
@@ -249,16 +251,26 @@ begin
   begin
     if TMovieFile(MovieList.Items[i]^).IsMovieFile then
     begin
-      li := MovieTreeView.Items.Add(nil, ExtractFileName(TMovieFile(MovieList.Items[i]^).FilePath));
+      li := MovieTreeView.Items.Add(nil,
+        ExtractFileName(TMovieFile(MovieList.Items[i]^).FilePath));
       li.Data := MovieList.Items[i];
     end;
   end;
-  StatusBar1.Panels[0].Text := Format('%d movies', [MovieTreeView.Items.Count]);
+  StatusBar.Panels[0].Text := Format('%d movies', [MovieTreeView.Items.Count]);
 end;
 
 procedure TMainForm.FormCreate(Sender: TObject);
+var
+  filename: String;
 begin
   MovieList := TList.Create;
+
+  //store the DB filename in the settings
+  filename := PropertiesINIReadString('Settings', 'MovieDB', '');
+  if FileExists(filename) then
+    DBConnection.DatabaseName := filename;
+
+  //TODO: read MovieList data from DB
 end;
 
 procedure TMainForm.ManualLookupButtonClick(Sender: TObject);
@@ -303,37 +315,37 @@ begin
 
       //show image if any was loaded
       if Assigned(mf^.PosterCache) then
-        Image1.Picture := mf^.PosterCache
+        MovieImage.Picture := mf^.PosterCache
       else
-        Image1.Picture.Clear;
+        MovieImage.Picture.Clear;
     end
     else
-      Image1.Picture.Clear;
+      MovieImage.Picture.Clear;
 
     TitleLabel.Caption := mf^.IMDbData.Title;
-    Label1.Caption := 'Year: ' + mf^.IMDbData.Year;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Rated: ' + mf^.IMDbData.Rated;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Released: ' +
+    DetailsLabel.Caption := 'Year: ' + mf^.IMDbData.Year;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Rated: ' + mf^.IMDbData.Rated;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Released: ' +
       mf^.IMDbData.Released;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Runtime: ' + mf^.IMDbData.Runtime;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Genre: ' + mf^.IMDbData.Genre;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Director: ' +
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Runtime: ' + mf^.IMDbData.Runtime;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Genre: ' + mf^.IMDbData.Genre;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Director: ' +
       mf^.IMDbData.Director;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Writer: ' + mf^.IMDbData.Writer;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Actors: ' + mf^.IMDbData.Actors;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Plot: ' + mf^.IMDbData.Plot;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Language: ' +
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Writer: ' + mf^.IMDbData.Writer;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Actors: ' + mf^.IMDbData.Actors;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Plot: ' + mf^.IMDbData.Plot;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Language: ' +
       mf^.IMDbData.Language;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Country: ' + mf^.IMDbData.Country;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Awards: ' + mf^.IMDbData.Awards;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Metascore: ' +
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Country: ' + mf^.IMDbData.Country;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Awards: ' + mf^.IMDbData.Awards;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Metascore: ' +
       mf^.IMDbData.Metascore;
-    Label1.Caption := Label1.Caption + sLineBreak + 'imdbRating: ' +
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'imdbRating: ' +
       mf^.IMDbData.imdbRating;
-    Label1.Caption := Label1.Caption + sLineBreak + 'imdbVotes: ' +
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'imdbVotes: ' +
       mf^.IMDbData.imdbVotes;
-    Label1.Caption := Label1.Caption + sLineBreak + 'imdbID: ' + mf^.IMDbData.imdbID;
-    Label1.Caption := Label1.Caption + sLineBreak + 'Type: ' + mf^.IMDbData._Type;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'imdbID: ' + mf^.IMDbData.imdbID;
+    DetailsLabel.Caption := DetailsLabel.Caption + sLineBreak + 'Type: ' + mf^.IMDbData._Type;
   end;
 end;
 
@@ -348,18 +360,73 @@ begin
       exit;
     end;
 
+    //setup the new database
+    DBConnection.DatabaseName := OpenDialog.FileName;
+    DBConnection.Connected := True;
 
+    SQLTransaction1.Active:=True;
+    //SQLQuery.Open;
+
+    //store the DB filename in the settings
+    PropertiesINIWriteString('Settings', 'MovieDB', OpenDialog.FileName);
+
+    //create the settings table
+    SQLQuery.SQL.Clear;
+    SQLQuery.SQL.Append('CREATE TABLE "Settings" (');
+    SQLQuery.SQL.Append(' "Value" TEXT,');
+    SQLQuery.SQL.Append(' "Setting" TEXT');
+    SQLQuery.SQL.Append(' );');
+    SQLQuery.ExecSQL;
+
+    //create the main data table
+    SQLQuery.SQL.Clear;
+    SQLQuery.SQL.Append('CREATE TABLE "Movies" (');
+    SQLQuery.SQL.Append(' "Title" TEXT,');
+    SQLQuery.SQL.Append(' "Year" TEXT,');
+    SQLQuery.SQL.Append(' "Rated" TEXT,');
+    SQLQuery.SQL.Append(' "Released" TEXT,');
+    SQLQuery.SQL.Append(' "Runtime" TEXT,');
+    SQLQuery.SQL.Append(' "Genre" TEXT,');
+    SQLQuery.SQL.Append(' "Director" TEXT,');
+    SQLQuery.SQL.Append(' "Writer" TEXT,');
+    SQLQuery.SQL.Append(' "Actors" TEXT,');
+    SQLQuery.SQL.Append(' "Plot" TEXT,');
+    SQLQuery.SQL.Append(' "Language" TEXT,');
+    SQLQuery.SQL.Append(' "Country" TEXT,');
+    SQLQuery.SQL.Append(' "Awards" TEXT,');
+    SQLQuery.SQL.Append(' "Poster" TEXT,');
+    SQLQuery.SQL.Append(' "Metascore" TEXT,');
+    SQLQuery.SQL.Append(' "imdbRating" TEXT,');
+    SQLQuery.SQL.Append(' "imdbVotes" TEXT,');
+    SQLQuery.SQL.Append(' "imdbID" TEXT,');
+    SQLQuery.SQL.Append(' "Type" TEXT,');
+    SQLQuery.SQL.Append(' "FilePath" TEXT,');
+    SQLQuery.SQL.Append(' "PosterData" BLOB');
+    SQLQuery.SQL.Append(' );');
+    SQLQuery.ExecSQL;
+
+    SQLTransaction1.Commit;
   end;
 end;
 
 procedure TMainForm.OpenDBMenuItemClick(Sender: TObject);
 begin
   //open an existing database
+  if OpenDialog.Execute then
+  begin
+    if not FileExists(OpenDialog.FileName) then
+    begin
+      ShowMessage('File already exists, please select a new filename!');
+      exit;
+    end;
+
+    //setup the database
+    DBConnection.DatabaseName := OpenDialog.FileName;
+    DBConnection.Connected := True;
 end;
 
 procedure TMainForm.PlayButtonClick(Sender: TObject);
 var
-  i: integer;
   filenametoplay: string;
   PlayProcess: TProcess;
   mf: PMovieFile;
